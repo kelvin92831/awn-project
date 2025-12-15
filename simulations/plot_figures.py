@@ -226,7 +226,7 @@ def plot_fig1_weighted_utility(
     plt.xticks(x, labels, rotation=20)
     plt.ylabel("Weighted sum utility")
     plt.ylim(50, 60) # Changed y-axis limit
-    plt.title("Figure 1: Weighted sum utility across schemes")
+    # plt.title("Figure 1: Weighted sum utility across schemes") # Removed title
     plt.tight_layout()
 
     os.makedirs(outdir, exist_ok=True)
@@ -259,7 +259,7 @@ def plot_fig2_tradeoff(
     plt.bar(x + width / 2, nonurgent_cov_means, width, label="Non-urgent")
     plt.xticks(x, scheme_labels)
     plt.ylabel("Coverage ratio")
-    plt.title("Figure 2(a): Coverage trade-off (urgent vs non-urgent)")
+    # plt.title("Figure 2(a): Coverage trade-off (urgent vs non-urgent)") # Removed title
     plt.legend()
     plt.tight_layout()
 
@@ -279,7 +279,7 @@ def plot_fig2_tradeoff(
     plt.bar(x + width / 2, nonurgent_util_means, width, label="Non-urgent")
     plt.xticks(x, scheme_labels)
     plt.ylabel("Average utility")
-    plt.title("Figure 2(b): Utility trade-off (urgent vs non-urgent)")
+    # plt.title("Figure 2(b): Utility trade-off (urgent vs non-urgent)") # Removed title
     plt.legend()
     plt.tight_layout()
 
@@ -307,7 +307,7 @@ def plot_fig4_kpaths(
     plt.plot(k_values, urg_cov_means, marker="s", label="Urgent coverage")
     plt.xlabel("Number of candidate mesh paths (k_paths)")
     plt.ylabel("Value")
-    plt.title("Figure 4: Impact of k_paths on AI-assisted performance")
+    # plt.title("Figure 4: Impact of k_paths on AI-assisted performance") # Removed title
     plt.legend()
     plt.tight_layout()
 

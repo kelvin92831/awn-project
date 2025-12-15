@@ -68,7 +68,6 @@ def evaluate_scheme(
     if scheme == "equal_share":
         beta = equal_share_backhaul_allocation(state, chosen_paths)
     else:
-        # "priority"、"ai"、"ai_learned" 都用 priority-weighted allocation
         beta = priority_weighted_backhaul_allocation(state, chosen_paths)
 
     assert beta.shape == (num_gus, num_bs, num_bs)
@@ -238,6 +237,6 @@ if __name__ == "__main__":
 
     run_multi_scenarios_all_schemes(
         num_scenarios=50,
-        base_seed=100,
+        base_seed=0,
         theta_learned=learned_theta,
     )
