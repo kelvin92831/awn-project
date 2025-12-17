@@ -1,5 +1,6 @@
 # simulations/plot_figures.py
 from __future__ import annotations
+from traceback import print_tb
 
 """
 繪製實驗圖表：
